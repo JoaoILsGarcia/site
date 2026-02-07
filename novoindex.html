@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de professores</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Cadasro de professores</h1>
+
+        <form>
+            <!--DADOS PESSOAIS-->
+
+        <fieldset>     
+                <legend id="dados">Dados pessoais</legend>
+    
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+    
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="18" required><br><br>
+    
+                <label for="email">E-mai:</label>
+                <input type="email" id="email" name="emial" required><br><br>
+    
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"><br><br>
+
+        </fieldset>
+        
+        <br>
+
+        <!-- INFORMAÇÕES ACADÊMICAS-->
+
+        <fieldset>
+            <legend id="escolaridade">Informações academicas</legend>
+        
+            <label for="escolaridade">Escolaridade</label>
+            <select name="escolaridade" id="escolaridade" required>
+                <option value="">Selecione</option>
+                <option value="superior">Ensino Superior</option>
+                <option value="pos">Pós-graduação</option>
+                <option value="mestrado">Mestrado</option>
+                <option value="doutorado">Doutorado</option>
+            </select>
+            <br><br>
+
+            <label id="materias">Matéria que leciona</label><br>
+
+            <input type="radio" name="materias" value="Portugues" required>Português <br>
+            <input type="radio" name="materias" value="matematica">Matemática <br>
+            <input type="radio" name="materias" value="fisica">Fisica <br>
+            <input type="radio" name="materias" value="historias">Hostórias <br>
+            <input type="radio" name="materias" value="química">Química <br>
+        </fieldset> 
+        
+        <br>
+
+
+        <fieldset>
+            <!--TURNOS-->
+            <legend>Turnos</legend>
+            <input type="checkbox" name="turnos" value="manha">Manhã <br>
+            <input type="checkbox" name="turnos" value="tarde">Trade <br>
+            <input type="checkbox" name="turnos" value="noite">Noite <br>
+        </fieldset>
+        
+        
+        <br>
+
+        <label for="descricao">Breve descrição profissional:</label><br>
+            <textarea  
+            id="descricao" name="descricao" rows="5" cols="50" 
+            maxlength="200"placeholder="Escreva uma breve descrição (máx. 200 caracteres)">
+            </textarea>
+            <br>
+            <br>
+
+            <input type="submit" value="cadastrar">
+            <input type="reset" name="limpar">
+
+
+
+        </form>
+    
+    
+    
+    
+    
+    
+    </header>
+
+
+
+    
+</body>
+</html>
