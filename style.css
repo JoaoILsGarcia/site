@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #65a2e0;
+    padding: 30px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Formulário */
+form {
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid #f00505;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+/* Legend */
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs, select e textarea */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #220404;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+}
+
+/* Radio e checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Botões */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Botão cadastrar */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 10px;
+}
+
+/* Botão limpar */
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Hover nos botões */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="reset"]:hover {
+    background-color: #e53935;
+}
