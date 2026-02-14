@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #a59e9e;
+}
+
+.cabecalho1 {
+
+    color: #e21717;
+}
+
+
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #00090c;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    margin: 0px 10px 10px 10px;
+}
+
+/* Menu */
+.menu {
+    background-color: #b3860c;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    font-weight: bold;
+}
+
+/* Área principal */
+.container {
+    display: flex;
+    min-height: 300px;
+}
+
+
+
+.esquerda {
+    display: flex;
+    width: 20%;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #c6ced1;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.direita {
+    display: flex;
+    width: 20%;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #c6ced1;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+/* Conteúdo central */
+.conteudo {
+    display: flex;
+    width: 60%;
+    background-color: #e21717;
+    padding: 15px;
+    font-weight: bold;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #000507;
+    text-align: center;
+    padding: 24px;
+    margin: 10px 10px 0px 10px;
+    font-weight: bold;
+    color: #eee;
+}
+
+.div-conteudo {
+    display: flex;
+    background-color: rgb(240, 224, 4);
+    align-items:center;
+    justify-content: center ;
+    height: 40px;
+    width: 100px
+}
+
+.div-colunaD {
+    background-color: rgb(240, 224,4);
+    height: 50px;
+    width: 100px;
+     border-radius: 5px;
+     padding: 5px;
+
+}
+
+.div-colunaE {
+    background-color: rgb(240, 224, 4);
+     height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    padding: 5px;
+
+}
