@@ -16,12 +16,14 @@ function calcularDesconto() {
         //calcula o valor de desconto e o preço final 
         const desconto = precoOriginal * (porcentagemDesconto / 100);
         const precoFinal = precoOriginal - desconto;
+       
 
         // exibe o resultado no console
         console.log("Preço original: R$" + precoOriginal.toFixed(2));
         console.log("Valor do desconto: R$" + desconto.toFixed(2));
         console.log("Preço final: R$" + precoFinal.toFixed(2));
 
+         document.getElementById("desconto").innerHTML= "Aplicado o desconto de :" + desconto;
         //mostra o resultado em um alerta
         alert(
             "Resultado:\n" + 
@@ -29,7 +31,9 @@ function calcularDesconto() {
             "valor do desconto: R$" + desconto.toFixed(2) + "\n" +
             "Preço final: R$" + precoFinal.toFixed(2)
       );
+
+      
     }
 }
 
-document.getElementById("calcular").addEventListener("click", calcularDesconto);
+//document.getElementById("calcular").addEventListener("click", calcularDesconto);

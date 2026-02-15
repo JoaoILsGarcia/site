@@ -7,15 +7,18 @@
     <title>Calculadora de desconto</title>
 </head>
 <body>
+    <main>
         <div class="container">
-        <h1>Calculadora de desconto</h1>
-        <p>Digite o preço e a porcentagem de desconto:</p>
-        <label for="precoOriginal">Preço Original (R$):</label>
-        <input type="number" id="precoOriginal" placeholder="Ex:100,00">
-        <label for="porcentagemDesconto">Desconto (%):</label>
-        <input type="number" id="porcentagemDesconto" placeholder="EX: 15">
-        <button id="calcular">Calcular</button>
+            <h1>Calculadora de desconto</h1>
+            <p>Digite o preço e a porcentagem de desconto:</p>
+            <label for="precoOriginal">Preço Original (R$):</label>
+            <input type="number" id="precoOriginal" placeholder="Ex:100,00">
+            <label for="porcentagemDesconto">Desconto (%):</label>
+            <input type="number" id="porcentagemDesconto" placeholder="EX: 15">
+            <button onclick="calcularDesconto()" id="calcular">Calcular</button>
+            <p id="desconto"></p>
         </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
