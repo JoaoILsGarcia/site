@@ -4,21 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Calculadora de desconto</title>
+    <script src="script.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <main>
-        <div class="container">
-            <h1>Calculadora de desconto</h1>
-            <p>Digite o preço e a porcentagem de desconto:</p>
-            <label for="precoOriginal">Preço Original (R$):</label>
-            <input type="number" id="precoOriginal" placeholder="Ex:100,00">
-            <label for="porcentagemDesconto">Desconto (%):</label>
-            <input type="number" id="porcentagemDesconto" placeholder="EX: 15">
-            <button onclick="calcularDesconto()" id="calcular">Calcular</button>
-            <p id="desconto"></p>
-        </div>
-    </main>
-    <script src="script.js"></script>
+
+    <h1>Trocando de cor as divs</h1>
+    <button id="botaoTrocaCor" onclick="trocarCor()">trocar de cor </button>
+     <button id="retornaCor" onclick="retornarCor()">Retorna cor padrão </button>
+    <div id="div-1" class="divTrocaCor">div 1  </div>
+    <div id="div-2" class="divTrocaCor">div 2 </div>
+    <div id="div-3" class="divTrocaCor">div 3  </div>
+    
 </body>
 </html>

@@ -1,39 +1,23 @@
-//função de realiza o calculo
-function calcularDesconto() {
-    //lê os valores digitados pelo usuario
-    const precoOriginal = parseFloat(document.getElementById("precoOriginal").value);
-    const porcentagemDesconto = parseFloat(document.getElementById("porcentagemDesconto").value);
+function trocarCor() {
 
-    //verifica de algum valor é negtivo ou não é numero válido
-    if (isNaN(precoOriginal) || isNaN(porcentagemDesconto) || precoOriginal < 0 || porcentagemDesconto < 0) 
-    {
-        alert("Por favor, insira valores numéricos não-negativos para preço e desconto.");
-        console.log ("Entrada inválida: valores negativos ou vazio.");
+    const div1 = document.getElementById("div-1");
+    const div2 = document.getElementById("div-2");
+    const div3 = document.getElementById("div-3");
 
-    } 
-    else {
-        
-        //calcula o valor de desconto e o preço final 
-        const desconto = precoOriginal * (porcentagemDesconto / 100);
-        const precoFinal = precoOriginal - desconto;
-       
-
-        // exibe o resultado no console
-        console.log("Preço original: R$" + precoOriginal.toFixed(2));
-        console.log("Valor do desconto: R$" + desconto.toFixed(2));
-        console.log("Preço final: R$" + precoFinal.toFixed(2));
-
-         document.getElementById("desconto").innerHTML= "Aplicado o desconto de :" + desconto;
-        //mostra o resultado em um alerta
-        alert(
-            "Resultado:\n" + 
-            "Preço Original: R$" + precoOriginal.toFixed(2) + "\n" +
-            "valor do desconto: R$" + desconto.toFixed(2) + "\n" +
-            "Preço final: R$" + precoFinal.toFixed(2)
-      );
-
-      
-    }
+    div1.style.backgroundColor = "red";
+    div2.style.backgroundColor = "lightBlue";
+    div3.style.backgroundColor = "lightGreen";
 }
 
-//document.getElementById("calcular").addEventListener("click", calcularDesconto);
+
+function retornarCor() {
+    
+    const div1 = document.getElementById("div-1");
+    const div2 = document.getElementById("div-2");
+    const div3 = document.getElementById("div-3");
+
+    
+    div1.style.backgroundColor = "";
+    div2.style.backgroundColor = "";
+    div3.style.backgroundColor = "";
+}
