@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedido de Pizza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🍕 Faça seu pedido</h1>
+
+    <label for="pedido">Escolha sua pizza:</label>
+    <select id="pedido">
+      <option value="">Selecione</option>
+      <option value="1">Pizza de calabresa</option>
+      <option value="2">Pizza de quatro queijos</option>
+      <option value="3">Pizza de frango com catupiry</option>
+      <option value="4">Pizza de brigadeiro</option>
+    </select>
+
+    <button onclick="mostrarPedido()">Confirmar Pedido</button>
+
+    <p id="resultado"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
