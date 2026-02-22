@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+}
+h1 {
+    color: rgb(8, 235, 8);
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    gap: 10px;
+}
+
+.celula {
+    display: flex;
+    background-color: rgb(221, 212, 201);
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+#btnReiniciar {
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: red;
+    cursor: pointer;
+}
+ 
+#btnReiniciar:hover {
+    background-color: black;
+    color: aliceblue;
+
+
+}

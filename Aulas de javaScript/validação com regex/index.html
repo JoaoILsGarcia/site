@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Validação de formulário</title>
+</head>
+
+<body>
+    <main>
+        <h1>Formulário de contato</h1>
+        <form id="contactForm">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required maxlength="100"><br>
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" required maxlength="100"><br>
+            <label for="message">Menssagem</label>
+            <textarea  name="message" id="message" required maxlength="100"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
